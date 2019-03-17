@@ -9,24 +9,11 @@
 
 <body class="grid-container">
 	<div class="head">
-		<header>
-			<a href="index.php">
-				<figure>
-					<h1>
-						<img src="images/overwatch-logo.png" alt="Overwatch Logo">
-					</h1>
-				</figure>
-			</a>
-		</header>
+		<?php include "inc/logo.inc"; ?>
 	</div>
 
 	<div class="nav-bar">
-		<nav class="menu">
-			<ul>
-				<li><a href="index.php">Home</a></li>
-				<li><a href="info.php">More Info</a></li>
-			</ul>
-		</nav>
+		<?php include "inc/nav.inc"; ?>
 	</div>
 
 
@@ -55,7 +42,7 @@
 				<p>The game features game modes for casual play, competitive ranked play, and for supporting esports competitions including Blizzard's Overwatch League. These modes generally are centered around sequentially securing control of points on the map, or escorting a payload between points on the map, with one team attacking while the other defends. Other modes set aside for casual matches include solo and team deathmatch, capture-the-flag, and unique modes run during various seasonal events. Regardless of winning or losing a match, players gain experience towards a player level, and on gaining a new level, receive loot boxes that contain cosmetic items that they can use to customize the appearance of the hero characters but otherwise does not affect gameplay. Loot boxes can also be purchased through microtransactions.</p>
 			</div>
 			<div>
-				<figure>
+				<figure class="picture">
 					<img src="images/grandmaster.png" alt="Grandmaster Icon">
 				</figure>
 			</div>
@@ -77,19 +64,15 @@
 		</article>
 	</div>
 
-	<form class="sign-up">
-		<fieldset>
-			<legend>Sign up for our Overwatch Newsletter!</legend>
-			Email Address:<br>
-			<input type="text" name="email"><br>
-			<input type="submit" value="Submit">
-		</fieldset>
-	</form>
-
-	<footer>Source: <a href="https://en.wikipedia.org/wiki/Overwatch_(video_game)" target="blank"> Overwatch Wikipedia Page</a></footer>
-
-	<script src="//code.jquery.com/jquery.js"></script>
-	<script src="js/menu-highlighter.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-</body>
-</html>
+	<div class="sign-up">
+		<form>
+			<fieldset>
+				<legend>Sign up for our Overwatch Newsletter!</legend>
+				Email Address:<br>
+				<input type="text" name="email"><br>
+				<input type="submit" value="Submit">
+			</fieldset>
+		</form>
+		<footer>Source: <a href="https://en.wikipedia.org/wiki/Overwatch_(video_game)" target="blank"> Overwatch Wikipedia Page</a></footer>
+	</div>
+<?php include "inc/scripts.inc"; ?>

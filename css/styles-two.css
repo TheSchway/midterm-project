@@ -1,9 +1,10 @@
 .grid-container { 
 	display: grid;
-	grid-template-rows: 100px 1fr 0.75fr 1fr;
+	grid-template-rows: 100px 1fr 0.75fr 1fr 50px 10px;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-areas: "head head nav-bar nav-bar" "overview overview overview overview" "gameplay gameplay gameplay gameplay" "plot plot plot plot";
+	grid-template-areas: "head head nav-bar nav-bar" "overview overview overview overview" "gameplay gameplay gameplay gameplay" "plot plot plot plot" "sign-up sign-up sign-up sign-up";
 	margin: 0 auto;
+	background-color: #405275;
 }
 .flex-container {
 	display: flex;
@@ -19,18 +20,28 @@
 }
 .overview {
 	grid-area: overview;
-	border: 1px red solid;
 	margin-left: 7px;
 	margin-right: 7px;
+	border-bottom: 3px #FA9C1D solid;
 }
 .gameplay {
 	grid-area: gameplay;
-	border: 1px red solid;
 	margin-bottom: 0;
+	margin-left: 7px;
+	margin-right: 7px;
+	border-bottom: 3px #FA9C1D solid;
 }
 .plot {
 	grid-area: plot;
-	border: 1px red solid;
+	margin-left: 7px;
+	margin-right: 7px;
+	border-bottom: 3px #FA9C1D solid;
+}
+.sign-up {
+	grid-area: sign-up;
+}
+.foot {
+	grid-area: foot;
 }
 header img {
 	display: block;
@@ -65,17 +76,44 @@ nav li {
 	border-bottom: 2px solid white;
 }
 p {
-	line-height: 1.5;
-	margin-left: 7px;
-	margin-right: 7px;
+	line-height: 1.6;
+	margin-left: 10px;
+	margin-right: 10px;
 	font-family: 'IBM Plex Serif', serif;
+	color: white;
 }
 .overview h2 {
-	margin-top: 30px;
+	margin-top: 40px;
 }
 .shift {
-	margin-top: 60px;
+	margin-top: 70px;
 }
 .move {
 	margin-top: 50px;
+}
+.picture { 
+	margin-top: 135px;
+}
+h2 {
+	margin-left: 10px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	color: white;
+}
+fieldset {
+	width: 25%;
+	margin-left: 10px;
+}
+a { text-decoration: none; }
+form {
+	margin-top: 20px;
+	color: white;
+}
+footer {
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: black;
+}
+footer a {
+	color: black;
 }

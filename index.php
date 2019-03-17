@@ -8,24 +8,11 @@
 </head>
 <body class="grid-layout">
 	<div class="head">
-		<header>
-			<a href="index.php">
-				<figure>
-					<h1>
-						<img src="images/overwatch-logo.png" alt="Overwatch Logo">
-					</h1>
-				</figure>
-			</a>
-		</header>
+		<?php include "inc/logo.inc"; ?>
 	</div>
 
 	<div class="nav-bar">
-		<nav class="menu">
-			<ul>
-				<li><a href="index.php">Home</a></li>
-				<li><a href="info.php">More Info</a></li>
-			</ul>
-		</nav>
+		<?php include "inc/nav.inc"; ?>
 	</div>
 
 	<div class="weak">
@@ -40,9 +27,4 @@
 			<li><a href="info.php">Learn More!</a></li>
 		</ol>
 	</div>
-	
-	<script src="//code.jquery.com/jquery.js"></script>
-	<script src="js/menu-highlighter.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-</body>
-</html>
+<?php include "inc/scripts.inc"; ?>
