@@ -1,6 +1,6 @@
 .grid-container { 
 	display: grid;
-	grid-template-rows: 100px 1fr 0.75fr 1fr 50px 10px;
+	grid-template-rows: 100px 0.75fr 0.75fr 1fr 50px 10px;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-areas: "head head nav-bar nav-bar" "overview overview overview overview" "gameplay gameplay gameplay gameplay" "plot plot plot plot" "sign-up sign-up sign-up sign-up";
 	margin: 0 auto;
@@ -20,25 +20,26 @@
 }
 .overview {
 	grid-area: overview;
-	margin-left: 7px;
-	margin-right: 7px;
+	margin-left: 70px;
+	margin-right: 70px;
 	border-bottom: 3px #FA9C1D solid;
 }
 .gameplay {
 	grid-area: gameplay;
 	margin-bottom: 0;
-	margin-left: 7px;
-	margin-right: 7px;
+	margin-left: 70px;
+	margin-right: 70px;
 	border-bottom: 3px #FA9C1D solid;
 }
 .plot {
 	grid-area: plot;
-	margin-left: 7px;
-	margin-right: 7px;
+	margin-left: 70px;
+	margin-right: 70px;
 	border-bottom: 3px #FA9C1D solid;
 }
 .sign-up {
 	grid-area: sign-up;
+	margin-left: 70px;
 }
 .foot {
 	grid-area: foot;
@@ -92,7 +93,7 @@ p {
 	margin-top: 50px;
 }
 .picture { 
-	margin-top: 135px;
+	margin-top: 60px;
 }
 h2 {
 	margin-left: 10px;
@@ -107,6 +108,7 @@ a { text-decoration: none; }
 form {
 	margin-top: 20px;
 	color: white;
+	margin-left: 940px;
 }
 footer {
 	margin-left: 10px;
@@ -116,4 +118,31 @@ footer {
 }
 footer a {
 	color: black;
+}
+.down {
+	margin-top: 7px;
+}
+.information {
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+.information-two {
+	margin-left: 110px;
+	margin-right: 50px;
+	margin-top: 30px;
+}
+.information-three {
+	margin-right: 50px;
+	margin-left: 40px;
+	margin-top: 30px;
+}
+.picture-two {
+	margin-top: 80px;
+}
+.down-two {
+	margin-top: 20px;
+}
+.picture-three {
+	margin-top: 80px;
 }
